@@ -1,0 +1,15 @@
+@import url('~normalize.css');
+#nprogress {
+    @color: @j_main_color;
+    .peg {
+        box-shadow: 0 0 10px @color, 0 0 5px darken(@color,20%) !important;
+    }
+    .bar {
+        background: lighten(@color ,5%) !important;
+        height: 4px !important;
+    }
+    .spinner-icon{
+        border-top-color: @color !important;
+        border-left-color:@color !important;
+    }
+}

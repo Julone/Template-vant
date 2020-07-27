@@ -1,0 +1,24 @@
+//变量
+@j_main_color: rgb(25,137,250);
+@j_danger_color: #f54c4c;
+@j_success_color: rgb(7,193,96);
+//函数
+.flex(@j:center;@a:center;@w:nowrap;@d:row;@f:flex){
+    display: @f;
+    justify-content: @j;
+    align-items: @a;
+    flex-direction: @d;
+    flex-wrap: @w;
+}
+.wh100(@w: 100%;@h: 100%;){
+    width: @w;
+    height: @h;
+    position: relative;;
+}
+.textRowOverflow(@rows: 2){
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: @rows;
+    -webkit-box-orient: vertical;
+}
